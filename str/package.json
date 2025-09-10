@@ -21,15 +21,6 @@
       "url": "https://strapi.io"
     }
   ],
-  "workspaces": [
-    "packages/*",
-    "packages/*/*",
-    "examples/*",
-    "examples/plugins/*",
-    "examples/*/src/plugins/*",
-    ".github/actions/*",
-    "scripts/*"
-  ],
   "scripts": {
     "build": "nx run-many --targets build:code,build:types --nx-ignore-cycles",
     "build:code": "nx run-many --target=build:code --nx-ignore-cycles",
@@ -102,7 +93,6 @@
     "@rollup/plugin-json": "6.1.0",
     "@rollup/plugin-node-resolve": "15.3.0",
     "@rollup/plugin-swc": "0.4.0",  
-    "@strapi/admin-test-utils": "workspace:*",
     "@strapi/eslint-config": "0.2.0",
     "@swc-node/register": "~1.9.1",
     "@swc/cli": "0.3.10",
@@ -120,7 +110,6 @@
     "chokidar": "3.6.0",
     "coffee": "5.5.1",
     "core-js": "3.36.0",
-    "create-strapi-app": "workspace:*",
     "cross-env": "7.0.3",
     "dotenv": "16.4.5",
     "eslint": "8.50.0",
